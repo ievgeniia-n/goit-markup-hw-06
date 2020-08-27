@@ -447,6 +447,7 @@ ul {
 	text-decoration: none;
 	background-color: var(--accent-color);
 	color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .address {
 	margin-top: 0;
@@ -697,11 +698,6 @@ footer {
 	fill: #ffffff;
 }
 
-.form-field {
-	margin-bottom: 10px;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-}
 
 .footer .order-link {
 	position: relative;
@@ -722,6 +718,78 @@ footer {
 	color: var(--title-text-color);
 }
 
-.form-list {
+.form-field input {
+	
+	display: flex;
+	flex-direction: column;
+	padding-top: 14px;
+	padding-bottom: 14px; 
 	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.form {
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: pink;
+}
+
+.form-field textarea {
+	height: 120px;
+	padding: 12px 16px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize:none;		
+}
+.form-field label {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--primary-text-color);
+	}
+
+.form-field textarea::placeholder {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+margin-bottom: 30px;
+font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+}
+
+.policy {
+color: var(--accent-color)
+}
+
+.form-icon {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 14px;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+
 }
