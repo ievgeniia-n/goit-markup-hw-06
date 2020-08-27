@@ -746,7 +746,7 @@ border-radius: 4px;
 	resize:none;		
 }
 .form-field label {
-	position: relative;
+	
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -785,11 +785,15 @@ color: var(--accent-color)
 }
 
 .form-icon {
+	bottom: 21px;
 	position: absolute;
 	width: 18px;
 	height: 18px;
 	left: 14px;
-	display: inline-block;
-	transform: translate(-50%, -50%);
-
+	display: inline-block;	
 }
+
+.form-field {
+	position: relative;
+}
+
