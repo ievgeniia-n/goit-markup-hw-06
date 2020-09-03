@@ -48,7 +48,6 @@
 				</ul>
 			</div>
 		</header>
-
 		<main>
 			<section class="page">
 				<div class="container-main">
@@ -65,9 +64,9 @@
 									<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 									<ul>
 										<li class="form-field">
-											<label>
+											<label class="form-label">
 												Имя
-												<input type="text" name="user-name" />
+												<input class="form-input" type="text" name="user-name" />
 											</label>
 											<svg class="form-icon">
 												<use href="./images/sprite.svg#person"></use>
@@ -94,16 +93,17 @@
 									   <li class="form-field">
 										<label>
 											Комментарии
-											<textarea name="comment" rows="3" placeholder="Введите текст"></textarea>
+											<textarea name="comment" placeholder="Введите текст"></textarea>
 										</label>
 										</li>
 									</ul>
-									<div class="checkbox">
-									<input type="checkbox" name="policy" value="policy" id="policy" />
-									<label for="policy">Соглашаюсь с рассылкой и принимаю<a href="#" class="policy"> Условия договора</a>
+									<div>
+
+									<input class="checkbox" type="checkbox" name="policy" value="policy" id="policy" />
+									<label class="checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю<a href="#" class="policy"> Условия договора</a>
 									</label>
 								</div>
-										<input class="order-link" type="button" value="Отправить" />
+										<button class="order-link" type="submit">Отправить</button>
 								</form>
 
 								<button data-modal-close class="button-close">
@@ -417,13 +417,17 @@
 				<div>
 					<p class="text-footer">Подпишитесь на рассылку</p>
 					<div class="form-field-footer">
-						<input type="email" name="mail" id="name" placeholder="E-mail" />
+						<label>
+						<input type="email" name="mail" placeholder="E-mail" />
+					</label>
+					
 						<button class="order-link">
 							Подписаться
 							<svg class="icon-send">
 								<use href="./images/sprite.svg#icon-send"></use>
 							</svg>
 						</button>
+					</div>
 					</div>
 				</div>
 			</div>
