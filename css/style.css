@@ -448,6 +448,7 @@ ul {
 	background-color: var(--accent-color);
 	color: #ffffff;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	overlay: non;
 }
 
 .order-link:hover {
@@ -726,6 +727,7 @@ footer {
 }
 
 .form-field input {
+	display: block;
 	margin-top: 4px;
 	display: flex;
 	flex-direction: column;
@@ -737,10 +739,20 @@ footer {
 	margin-bottom: 10px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+outline: 0;
 }
 
+.form-field:focus-within > .form-icon {
+	fill: var(--accent-color);
+} 
 
+.form-field:focus-within input {
+	border-color: var(--accent-color);
+} 
 
+.form-field:focus-within textarea {
+	border-color: var(--accent-color);
+} 
 .form {
 	margin-left: 40px;
 	margin-right: 40px;
@@ -753,7 +765,8 @@ border-radius: 4px;
 	margin-bottom: 20px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	resize:none;		
+	resize:none;
+	outline: 0;		
 }
 .form-field label {
 	
